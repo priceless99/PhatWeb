@@ -1,0 +1,184 @@
+.back {
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .back {
+    height: 50vh;
+    object-fit: cover
+
+  }
+}
+
+.pic {
+  width: 100%
+}
+
+.containerBox {
+  position: relative;
+  margin: 0 0;
+
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  color: white
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .head {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .head {
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .head {
+    font-size: 40px;
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .head {
+      font-size: 48px;
+    }
+  }
+}
+
+.cer {
+  text-align: center;
+  padding: 3vh;
+}
+
+.cer1 {
+  text-align: center;
+  padding: 3vh;
+  background-color: lightgray
+}
+.cerA {
+  text-align: center;
+  padding: 3vh;
+  background-color: rgb(185, 185, 185)
+}
+.cer2 {
+  text-align: center;
+  background-color: lightgray;
+  
+}
+
+@media (min-width: 768px) {
+  .par {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+.cntr {
+  padding: 8vw 8vh;
+  padding-right: 4vh;
+  margin: 0;
+}
+.tier {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+  .display-4 {
+    font-size: 1.5rem;
+    font-weight: 350  
+  }
+
+  @media (min-width: 576px) {
+    .display-4 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .display-4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .display-4 {
+      font-size: 2rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  
+  }
+
+  @media (min-width: 576px) {
+    .lead {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lead {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .lead {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .lead {
+      font-size: 1.25rem;
+    }
+  }
+  
+.pic {
+  width: 25vw;
+  height: 25vh;
+}    
+@media (max-width: 576px) {
+  .pic {
+      width: 100%;
+      height: 30vh;
+   }
+  }
+
+  .imgr {
+    width: 80vw;
+    height: 70vh
+    
+
+  }
+  .font {
+      margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  @media (max-width: 576px) {
+    .font {
+      margin-left: 0vw;
+      margin-right: 0vw;
+     }
+    }
+
