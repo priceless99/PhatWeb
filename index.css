@@ -1,12 +1,11 @@
 .back {
-  width: 100vw;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
   .back {
     height: 50vh;
     object-fit: cover
-
   }
 }
 
@@ -14,7 +13,7 @@
   width: 100%
 }
 
-.containerBox {
+.stupidBox {
   position: relative;
   margin: 0 0;
 
@@ -28,33 +27,34 @@
 }
 
 .head {
-  color: white
+  color: white;
+  text-align: center
 }
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
   .head {
-    font-size: 16px;
+    font-size: 32px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .head {
-    font-size: 30px;
+    font-size: 48px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .head {
-    font-size: 40px;
+    font-size: 54px;
   }
 
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     .head {
-      font-size: 48px;
+      font-size: 64px;
     }
   }
 }
@@ -69,15 +69,23 @@
   padding: 3vh;
   background-color: lightgray
 }
+
 .cerA {
   text-align: center;
   padding: 3vh;
   background-color: rgb(185, 185, 185)
 }
+
 .cer2 {
   text-align: center;
   background-color: lightgray;
-  
+}
+.txt {
+  text-align: center
+}
+
+.pos {
+  padding: 4vw 4vh;
 }
 
 @media (min-width: 768px) {
@@ -86,99 +94,270 @@
     padding-right: 15vw;
   }
 }
+
 .cntr {
   padding: 8vw 8vh;
   padding-right: 4vh;
   margin: 0;
 }
+
 .tier {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  padding: 5vw
+
 }
+@media (max-width: 768px) {
+  .tier {
+    width: 100%;
+    padding-top: 0vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10vh
+  }
+}
+.col-md-7 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.display-4 {
+  font-size: 1.75rem;
+  font-weight: 400
+}
+
+@media (min-width: 576px) {
   .display-4 {
-    font-size: 1.5rem;
-    font-weight: 350  
+    font-size: 1.6rem;
   }
+}
 
-  @media (min-width: 576px) {
-    .display-4 {
-      font-size: 1.3rem;
-    }
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 1.6rem;
   }
+}
 
-  @media (min-width: 768px) {
-    .display-4 {
-      font-size: 1.3rem;
-    }
+@media (min-width: 992px) {
+  .display-4 {
+    font-size: 1.75rem;
   }
+}
 
-  @media (min-width: 992px) {
-    .display-4 {
-      font-size: 1.5rem;
-    }
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 2rem;
   }
+}
 
-  @media (min-width: 1200px) {
-    .display-4 {
-      font-size: 2rem;
-    }
-  }
+.lead {
+  font-size: 1.2rem;
 
+
+}
+
+@media (min-width: 576px) {
   .lead {
-    font-size: 1.1rem;
-  
+    font-size: 1.15rem;
   }
+}
 
-  @media (min-width: 576px) {
-    .lead {
-      font-size: 0.8rem;
-    }
+@media (min-width: 768px) {
+  .lead {
+    font-size: 1.2rem;
   }
+}
 
-  @media (min-width: 768px) {
-    .lead {
-      font-size: 1rem;
-    }
+@media (min-width: 992px) {
+  .lead {
+    font-size: 1.25rem;
   }
+}
 
-  @media (min-width: 992px) {
-    .lead {
-      font-size: 1rem;
-    }
+@media (min-width: 1200px) {
+  .lead {
+    font-size: 1.25rem;
   }
+}
 
-  @media (min-width: 1200px) {
-    .lead {
-      font-size: 1.25rem;
-    }
-  }
-  
 .pic {
   width: 25vw;
   height: 25vh;
-}    
+}
+
 @media (max-width: 576px) {
   .pic {
-      width: 100%;
-      height: 30vh;
-   }
+    width: 100%;
+    height: 30vh;
   }
+}
 
-  .imgr {
-    width: 80vw;
-    height: 70vh
-    
+.imgr {
+  width: 80vw;
+  height: 70vh
+}
+
+.font {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.font1 {
+  padding-left: 10vw;
+}
+@media (max-width: 576px) {
+  .font1 {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }  
+
+}
+
+.font2 {
+  padding-right: 10vw;
+} 
+@media (max-width: 576px) {
+  .font2 {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 
   }
+}
+
+.font3 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+@media (max-width: 576px) {
+  .font3 {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+
+  }
+}
+
+.pad {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+.padded {
+  padding-bottom: 3vh;
+}
+
+@media (max-width: 576px) {
   .font {
-      margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
   }
-  @media (max-width: 576px) {
-    .font {
-      margin-left: 0vw;
-      margin-right: 0vw;
-     }
-    }
+}
 
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+/* #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+     */
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
