@@ -1,34 +1,137 @@
+body,
+html {
+  height: 100%;
+}
+
 .back {
   width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  height: 100vh;
+  object-fit: cover
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black
+}
+.navbar-brand {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar-expand-lg {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('IMG_1047.JPG');
+
+  /* Full height */
+  height: 60%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.top {
+  margin: 0 auto
 }
 
 @media only screen and (max-width: 600px) {
   .back {
-    height: 50vh;
+    height: 75vh;
     object-fit: cover
   }
 }
-
-.pic {
-  width: 100%
+.highlight {
+  color: orangered
 }
+
 
 .stupidBox {
   position: relative;
   margin: 0 0;
 
 }
+.btn-primary {
+  background-color: orangered;
+  padding: 16px 30px;
+  border-radius: 0;
+  border: 1px;
+  border-color: orangered;
+  border-style: solid;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 16px 30px;
+  border-radius: 0;
+  border: 1px;
+  border-color: #545b62;
+  border-style: solid;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+
+a {
+  color: orangered  
+}
+i {
+  color: orangered
+}
 
 .text-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 10%;
+  color: white;
+  margin-right: 30%
+}
+.let {
+  font-size: 5vh
+}
+
+@media only screen and (max-width: 768px) {
+  .text-box {
+    /* position: absolute; */
+    top: 30%;
+    left: 5%;
+    color: white;
+    margin-right: 20%
+  }
+  .let {
+    font-size: 5vh
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .text-box {
+    /* position: absolute; */
+    top: 20%;
+    left: 5%;
+    color: white;
+    margin-right: 5%
+  }
+  .let {
+    font-size: 4vh
+  }
+  
 }
 
 .head {
-  color: white;
-  text-align: center
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif
 }
 
 /* Small devices (landscape phones, 544px and up) */
@@ -59,12 +162,54 @@
   }
 }
 
+.head1 {
+  /* color: white; */
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .head1 {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .head1 {
+    font-size: 24px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .head1 {
+    font-size: 26px;
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .head1 {
+      font-size: 32px;
+    }
+  }
+}
+
 .cer {
   text-align: center;
   padding: 3vh;
+  
 }
 
 .cer1 {
+  text-align: center;
+  padding: 3vh;
+  padding-top: 0;
+  padding-bottom: 6vh;
+  background-color: lightgray
+}
+.cerZ {
   text-align: center;
   padding: 3vh;
   background-color: lightgray
@@ -76,16 +221,23 @@
   background-color: rgb(185, 185, 185)
 }
 
+.cerB {
+  background-color: black
+}
+.room {
+  padding: 8px
+}
 .cer2 {
   text-align: center;
   background-color: lightgray;
 }
+
 .txt {
   text-align: center
 }
 
 .pos {
-  padding: 4vw 4vh;
+  padding: 2vw 2vh;
 }
 
 @media (min-width: 768px) {
@@ -107,8 +259,8 @@
   height: 100%;
   object-fit: cover;
   padding: 5vw
-
 }
+
 @media (max-width: 768px) {
   .tier {
     width: 100%;
@@ -118,10 +270,12 @@
     padding-bottom: 10vh
   }
 }
+
 .col-md-7 {
   padding: 0 !important;
   margin: 0 !important;
 }
+
 .display-4 {
   font-size: 1.75rem;
   font-weight: 400
@@ -184,9 +338,12 @@
 .pic {
   width: 25vw;
   height: 25vh;
+   width: 100%;
+  object-fit: cover;
+  object-position: 50% 23%
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .pic {
     width: 100%;
     height: 30vh;
@@ -206,17 +363,19 @@
 .font1 {
   padding-left: 10vw;
 }
+
 @media (max-width: 576px) {
   .font1 {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-  }  
+  }
 
 }
 
 .font2 {
   padding-right: 10vw;
-} 
+}
+
 @media (max-width: 576px) {
   .font2 {
     padding-left: 2.5vw;
@@ -229,6 +388,7 @@
   padding-left: 5vw;
   padding-right: 5vw;
 }
+
 @media (max-width: 576px) {
   .font3 {
     padding-left: 2.5vw;
@@ -243,7 +403,11 @@
 }
 
 .padded {
-  padding-bottom: 3vh;
+  padding-bottom: 1.5vh;
+}
+
+.padded1 {
+  padding-top: 1.5vh;
 }
 
 @media (max-width: 576px) {
@@ -251,6 +415,10 @@
     margin-left: 0vw;
     margin-right: 0vw;
   }
+}
+
+.navbar-inner {
+  background: transparent;
 }
 
 
